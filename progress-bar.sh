@@ -1,7 +1,7 @@
 #!/bin/bash
 LABEL=$3
 PERCENT=$(./math.sh "($100/$2)" 0)
-PERCENT_Q=$(./math.sh $PERCENT/4 0)
+PERCENT_Q=$(./math.sh $PERCENT/5 0)
 
 echo -ne "\r"
 
@@ -25,7 +25,7 @@ done
 
 echo -ne ">"
 
-for i in `seq $PERCENT_Q 1 24`;
+for i in `seq $PERCENT_Q 1 19`;
 do
 	echo -ne " "
 done
